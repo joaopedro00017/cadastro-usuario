@@ -1,0 +1,77 @@
+.cadastros-container {
+  background: linear-gradient(
+    135deg,
+    #1a0b4d 0%,
+    #4a1c7d 30%,
+    #a83e9b 60%,
+    #ffc04d 90%,
+    #2c0f6b 100%
+  );
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.back {
+  width: 100%; /* Faz com que o contêiner do botão ocupe toda a largura disponível */
+  display: flex; /* Transforma o 'back' em um contêiner flexível */
+  justify-content: flex-start; /* Alinha o conteúdo (o botão) à esquerda */
+  padding-left: 0px; /* Remove o padding da esquerda, se houver */
+  margin-bottom: 20px; /* Adiciona um espaço abaixo do botão */
+}
+
+.back button {
+  background-color: #202225;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s; /* Indica que é clicável */
+}
+
+.back button:hover {
+  transform: scale(1.3); /* Aumenta o tamanho do botão ao passar o mouse */
+  opacity: 0.8; /* Efeito de hover para indicar interatividade */
+}
+.back img {
+  width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .cadastros-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .back img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cadastros-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .back {
+    margin-left: 25px;
+  }
+
+  .back img {
+    width: 20px;
+    height: 20px;
+  }
+}
